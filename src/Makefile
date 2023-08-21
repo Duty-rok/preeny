@@ -35,7 +35,7 @@ endif
 endif
 
 
-CFLAGS:=$(CFLAGS) -Wall
+CFLAGS:=$(CFLAGS) -Wall -g
 
 ifneq (,$(findstring linux,$(MACHINE)))
   CFLAGS:=$(CFLAGS) -DLINUX -ldl
